@@ -5,7 +5,7 @@ const reader = readline.createInterface({
   output: process.stdout,
 });
 
-reader.question("What would you like to calculate?", function(input){
+reader.question("What would you like to calculate? Type your desired operator (+, -, *, /, or ^) and up to two numbers, separated by spaces. Ex: '/ 36 6'  or '^ 49'", function(input){
 	const tokens = input.split(' ');
 	
 	const mathSymbol = tokens[0];
